@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pallavi - The Architectural Designer</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+body {
+    padding-top: 70px;
+     background-color: rgb(212, 236, 236);
+}
+
+/* Hero */
+.hero {
+    background: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+h1{
+text-align: center;
+background-color: rgb(77, 98, 186);
+border-style: ridge;margin-left: 200px;margin-right: 200px;margin-top: 0px;margin-bottom: 0px;
+padding: 0px;
+margin: 0px;
+text-shadow: 5px 5px 2px rgb(106, 82, 82);
+text-transform: capitalize;
+text-decoration: solid;
+font-size: 50px;
+background: radial-gradient(rgb(245, 249, 249), rgb(190, 199, 199), rgb(123, 204, 204));
+}
+h2{
+text-align: center;
+padding: 10px;
+border: 2px solid;
+border-radius: 200%;
+background: radial-gradient(aqua, rgb(68, 190, 190), rgb(123, 204, 204));
+border-style: ridge;margin-left: 100px;margin-right: 100px;margin-top: 0px;margin-bottom: 0px;
+}
+
+/* Cards */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card:hover {
+    transform: scale(1.05);
+border-color: brown;
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Images */
+.gallery img {
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+contact{
+background-color: lightgreen;
+}
+about {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: balck;
+}
+cta{
+  background:linear-gradient(140deg,var(--primary),var(--primary),var(--secondary));
+  background-color: #1cc2b7;
+  color:black;
+}
+wp{
+  color: green;
+}
+/* Footer */
+footer{
+    background: #212529;
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+
+footer h5{
+    margin-bottom: 15px;
+}
+
+
+footer a{
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
+
+footer a:hover{
+    color: #1cc2b7;
+}
+
+
+/* WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.jpeg" width="40" class="me-2"> Pallavi Designer
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#interior">Interior</a></li>
+            <li class="nav-item"><a class="nav-link" href="#exterior">Exterior</a></li>
+            <li class="nav-item"><a class="nav-link" href="#interior-spaces">Interior Spaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="#exterior-spaces">Exterior Spaces</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1 class="fw-bold">Design Your Dream Space</h1>
+<p class="text-muted">Stylish interiors & stunning exteriors tailored for you</p>
+</section>
+
+<!-- SLIDER -->
+<div class="container my-4">
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+    <div class="carousel-item active"><img src="images/img1.jpg" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/img2.jpg" class="d-block w-100"></div>
+    <div class="carousel-item"><img src="images/hall3.jpg" class="d-block w-100"></div>
+</div>
+</div>
+</div>
+
+<!-- INTERIOR -->
+<section id="interior" class="container py-5">
+<h2 class="text-center mb-4">Interior Design</h2>
+<div class="row g-4">
+
+<div class="col-12 col-sm-6 col-md-4">
+<div class="card h-100">
+<img src="images/Hall.jpg" class="card-img-top">
+<div class="card-body"><h5>Hall</h5><p>Modern living space</p></div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-md-4">
+<div class="card h-100">
+<img src="images/Bedroom.jpg" class="card-img-top">
+<div class="card-body"><h5>Bedroom</h5><p>Comfort & style</p></div>
+</div>
+</div>
+
+<div class="col-12 col-sm-6 col-md-4">
+<div class="card h-100">
+<img src="images/kitchen.jpg" class="card-img-top">
+<div class="card-body"><h5>Kitchen</h5><p>Smart modular design</p></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- EXTERIOR -->
+<section id="exterior" class="container py-5">
+<h2 class="text-center mb-4">Exterior Design</h2>
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card h-100">
+<img src="images/Elegant Exterior.jpeg" class="card-img-top">
+<div class="card-body"><h5>Elegant Exterior</h5></div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100">
+<img src="images/Luxury House.jpg" class="card-img-top">
+<div class="card-body"><h5>Luxury House</h5></div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card h-100">
+<img src="images/home Desigen.jpg" class="card-img-top">
+<div class="card-body"><h5>Home Design</h5></div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- INTERIOR GALLERY -->
+<section id="interior-spaces" class="container py-5">
+<h2 class="text-center mb-4">Interior Spaces</h2>
+<div class="row g-3 gallery">
+
+<div class="col-6 col-md-3"><img src="images/1st.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Meeting Room</p></div>
+
+<div class="col-6 col-md-3"><img src="images/Hall2.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Hall</p></div>
+
+<div class="col-6 col-md-3"><img src="images/Office.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Office</p></div>
+
+<div class="col-6 col-md-3"><img src="images/Beedroom.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Bedroom</p></div>
+
+<div class="col-6 col-md-3"><img src="images/kitchen style.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Modern Kitchen</p></div>
+
+<div class="col-6 col-md-3"><img src="images/kitchennnnnn.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Kitchen Style</p></div>
+
+<div class="col-6 col-md-3"><img src="images/Wating Room.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Wating Room</p></div>
+
+<div class="col-6 col-md-3"><img src="images/Studying Room.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Studying Room</p></div>
+</div>
+</section>
+
+<!-- EXTERIOR GALLERY -->
+<section id="exterior-spaces" class="container py-5">
+<h2 class="text-center mb-4">Exterior Spaces</h2>
+<div class="row g-3 gallery">
+
+<div class="col-6 col-md-3"><img src="images/Box house.jpg" class="img-fluid rounded" onclick="openImage(this.src)"> <p>Box House</p></div>
+<div class="col-6 col-md-3"><img src="images/narroe howse.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Narroe House</p></div>
+<div class="col-6 col-md-3"><img src="images/urban Home.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Urban Home</p></div>
+<div class="col-6 col-md-3"><img src="images/office bulding.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Modern House</p></div>
+<div class="col-6 col-md-3"><img src="images/shop front.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Modern House</p></div>
+<div class="col-6 col-md-3"><img src="images/Modern villa.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Office Front</p></div>
+<div class="col-6 col-md-3"><img src="images/Apartment block.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Apartment block</p></div>
+<div class="col-6 col-md-3"><img src="images/evening house.jpg" class="img-fluid rounded" onclick="openImage(this.src)"><p>Evening House</p></div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container py-5">
+<h2 class="fw-bold mb-3">About Us</h2>
+
+<p class="text-muted">
+At Pallavi The Architectural Designer, we specialize in creating
+modern, elegant, and functional interior and exterior spaces that
+reflect your personality and lifestyle. Our goal is to transform
+your vision into reality with innovative design solutions.
+</p>
+
+<h5 class="mt-4">Our Services</h5>
+<ul>
+<li>✔ Interior Design (Living Room, Bedroom, Kitchen, Office)</li>
+<li>✔ Exterior Design & Elevation</li>
+<li>✔ Space Planning & 3D Visualization</li>
+<li>✔ Renovation & Turnkey Projects</li>
+</ul>
+
+<h5 class="mt-4">Why Choose Us</h5>
+<ul>
+<li>✔ Creative & Modern Designs</li>
+<li>✔ High-Quality Materials</li>
+<li>✔ Affordable Pricing</li>
+<li>✔ On-Time Project Delivery</li>
+<li>✔ Customer Satisfaction Focus</li>
+</ul>
+<div class="col-6 col-md-3"><img src="images/About us.jpg" class="img-fluid rounded" onclick="openImage(this.src)"></div>
+<p>We create modern and functional interior & exterior designs with quality and creativity.</p>
+</section>
+
+<!-- ================= CTA ================= -->
+<div class="cta">
+<section class="cta text-center p-5 mt-5">
+<h3>“Designing stylish interiors and stunning exteriors that bring your vision to life.”</h3>
+<p>We design stylish interiors and stunning exteriors that reflect your personality and lifestyle.
+Our creative solutions blend beauty, functionality, and modern design for lasting impressions.</p>
+<a href="https://wa.me/9822724886" class="btn btn-light btn-lg">
+  <div class="wp">
+<i class="bi bi-whatsapp"></i> Chat on WhatsApp
+</div>
+</a>
+</div>
+<!-- Client Review -->
+</section>
+<section class="bg-light py-5">
+<div class="container">
+<h2 class="text-center mb-4">What Clients Say</h2>
+<div class="row">
+
+
+<div class="col-md-4">
+<div class="card p-3">
+<p>“Amazing interior design. Highly professional.”</p>
+<strong>- Nikita Adik</strong>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card p-3">
+<p>“Excellent interior work with great attention to detail. Truly impressed with the quality and finish.”</p>
+<strong>- Niraj Kulkarni</strong>
+</div>
+</div>
+
+
+<div class="col-md-4">
+<div class="card p-3">
+<p>“Very professional approach with unique interior concepts. Loved the finishing.”</p>
+<strong>- Reshma Shaikh</strong>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+<h2>Contact Us</h2><br>
+<form action="/submit" method="post">
+<input type="text" name="name" class="form-control mb-2" placeholder="Your Name" required>
+<input type="email" name="email" class="form-control mb-2" placeholder="Your Email" required>
+<input type="text" name="phone" class="form-control mb-2" placeholder="Phone">
+<textarea name="message" class="form-control mb-2" placeholder="Message"></textarea>
+<button class="btn btn-dark">Send</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center">
+
+<div class="container">
+<div class="row">
+
+
+<div class="col-md-4">
+ <img src="images/logo.jpeg" width="100" class="me-2"> 
+<h5>Pallavi The Designer</h5>
+<p>Innovative Desgine For every Space, Every Dreames.</p>
+</div>
+
+
+<div class="col-md-4">
+<h5>Contact</h5>
+<p><i class="bi bi-telephone me-3"></i> 9822724886</p>
+<p><i class="bi bi-envelope"></i>pallavidisgin@gmail.com</p>
+</div>
+
+
+<div class="col-md-4">
+<h5>Follow Us</h5>
+<a href="#"><i class="bi bi-facebook fs- me-3">Pallavi B. Bhagat</i></a><br>
+<a href="#"><i class="bi bi-instagram fs- me-3">pb_engineer_3d_dessgin</i></a><br>
+<a href="#"><i class="bi bi-whatsapp fs-"></i> 9822724886</a>
+
+
+
+</div>
+
+
+</div>
+<hr>
+<p class="text-center mb-0">© 2025 Pallavi The Designer | All Rights Reserved
+</p>
+</div>
+
+</footer>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/9822724886" class="whatsapp-float">💬</a>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function openImage(src){
+    let w = window.open("");
+    w.document.write("<img src='"+src+"' style='width:100%'>");
+}
+</script>
+
+</body>
+</html>

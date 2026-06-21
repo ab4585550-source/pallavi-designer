@@ -1,0 +1,280 @@
+@charset "UTF-8";
+:root{
+--primary:#1cc2b7;
+--secondary:#7da3dc;
+--dark:#0c1529;
+--light:#f0f2f4;
+}
+*{scroll-behavior:smooth}
+body{
+font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto;
+background:linear-gradient(180deg,#d4d9de,#b6e4da);
+color:#334155;
+}
+
+
+/* ================= NAVBAR ================= */
+.navbar{
+backdrop-filter:saturate(180%) blur(8px);
+box-shadow:0 10px 30px rgba(0, 0, 0, 0.12);
+}
+.navbar-brand{
+font-weight:600;
+letter-spacing:.3px;
+}
+/* .navbar-brand img{border-radius:50%} */
+.nav-link{position:relative}
+.nav-link::after{
+content:"";position:absolute;left:0;bottom:5px;width:0;height:2px;background:var(--primary);transition:.3s
+}
+.nav-link:hover::after{width:100%}
+
+
+/* ================= HERO ================= */
+.hero{
+margin-top:96px;
+padding:48px 16px 16px;
+text-align:center;
+}
+.hero h1{
+    text-align: center;
+background-color: rgb(77, 198, 186);
+border-style: ridge;margin-left: 200px;margin-right: 200px;margin-top: 0px;margin-bottom: 0px;
+padding: 2px;
+margin: 10px;
+text-shadow: 5px 5px 2px rgb(106, 82, 82);
+text-transform: capitalize;
+text-decoration: solid;
+font-size: 50px;
+background: radial-gradient(rgb(245, 249, 249), rgb(190, 199, 199), rgb(123, 204, 204));
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+    
+font-size:clamp(2.2rem,4.5vw,3.6rem);
+/* font-weight:800; */
+/* line-height:1.1; */
+/* background:linear-gradient(90deg,var(--primary),var(--secondary)); */
+/* -webkit-background-clip:text;-webkit-text-fill-color:transparent */
+}
+.hero p{max-width:720px;margin:10px auto 0}
+
+
+/* ================= CAROUSEL ================= */
+.carousel{border-radius:20px}
+.carousel-item img{
+height:60vh;min-height:360px;object-fit:cover;border-radius:20px
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+section h2{
+font-weight:700;text-align:center;margin:64px 0 28px;position:relative;
+font-size:clamp(1.4rem,3vw,2.2rem)
+}
+section h2::after{
+content:"";display:block;width:72px;height:4px;background:linear-gradient(90deg,var(--primary),var(--secondary));
+border-radius:6px;margin:12px auto 0
+}
+section h2::after{
+content:"";display:block;width:70px;height:4px;background:var(--primary);border-radius:6px;margin:10px auto 0
+}
+
+
+/* ================= CARDS ================= */
+.card{
+border:none;border-radius:18px;overflow:hidden;transition:.35s ease;box-shadow:0 8px 24px rgba(15,23,42,.08)
+}
+.card img{aspect-ratio:4/3;object-fit:cover}
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 40px rgba(15,23,42,.18)
+}
+.card-body h5{font-weight:600}
+
+
+
+
+/* ================= ELEGANT INTERIOR & EXTERIOR GALLERY ================= */
+#Elegant\ Interior\ Spaces, #Elegant\ Exterior\ Spaces{
+padding:0px 0
+}
+#Elegant\ Interior\ Spaces \p{
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: var(--dark);
+}
+#Elegant\ Exterior\ Spaces \p {
+    padding: 10px;
+    text-align: center;
+    font-style: var(--dark);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#Elegant\ Interior\ Spaces .col,
+#Elegant\ Exterior\ Spaces .col{
+position:relative
+}
+
+
+
+
+#Elegant\ Interior\ Spaces img,
+#Elegant\ Exterior\ Spaces img{
+width:100%;
+height: 200px;
+aspect-ratio:4/4;
+object-fit:cover;
+border-radius:20px;
+transition:.4s ease;
+box-shadow:0 10px 28px rgba(20, 76, 205, 0.15)
+}
+
+
+
+
+/* #Elegant\ Interior\ Spaces .col:hover img, */
+/* #Elegant\ Exterior\ Spaces .col:hover img{ */
+/* transform:scale(1.08); */
+/* filter:brightness(.85);border: 2px solid; */
+/* } */
+
+
+/* ===== Full Screen Image Viewer ===== */
+.fullscreen-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+
+.fullscreen-img img {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 10px;
+}
+
+
+.fullscreen-img.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+#Elegant\ Interior\ Spaces .col:hover p{opacity:1}
+
+
+/* ================= CTA ================= */
+.cta{
+background:radial-gradient(1200px 400px at 10% -10%,rgba(255,255,255,.25),transparent),
+            linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;border-radius:28px
+}
+.cta h3{font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700}
+.cta p{max-width:720px;margin:10px auto 20px}
+.cta .btn{border-radius:999px;padding:12px 26px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.2)}
+
+
+/* ================= CONTACT ================= */
+#contact .card{
+border-radius:22px
+}
+#contact .form-control{
+border-radius:14px;border:1px solid #e5e7eb
+}
+#contact .form-control:focus{
+border-color:var(--primary);box-shadow:0 0 0 .2rem rgba(28,194,183,.15)
+}
+
+
+
+
+
+
+
+
+
+
+/* ================= CLIENT REVIEWS ================= */
+.reviews{background:linear-gradient(180deg,#ffffff,#f1f5f9)}
+.review-card{
+background:linear-gradient(180deg,#ffffff,#fbfdff);
+padding:32px 28px 28px;
+border-radius:24px;
+height:100%;
+box-shadow:0 12px 36px rgba(15,23,42,.12);
+position:relative;
+transition:.35s ease;
+}
+.review-card:hover{
+transform:translateY(-8px);
+box-shadow:0 22px 48px rgba(15,23,42,.2)
+}
+.review-card::before{
+content:"p"; /* opening quote */
+position:absolute;
+top:-28px;left:20px;
+font-size:96px;
+font-weight:700;
+color:var(--primary);
+opacity:.18;
+}
+.review-card p{
+font-style:italic;
+font-size:1.02rem;
+line-height:1.6;
+margin-bottom:18px;
+color:#475569
+}
+.review-card strong{
+display:block;
+margin-top:6px;
+color:#0f172a;
+font-weight:600
+}
+.review-card::after{
+content:"★★★★★";
+letter-spacing:3px;
+color:#f59e0b;
+position:absolute;
+bottom:18px;right:22px;
+font-size:.9rem
+}
+
+
+/* ================= FOOTER ================= */
+footer{background:#0b1220;color:#cbd5e1;padding: 20px;}
+
+
+
+
+/* ================= WHATSAPP FLOAT ================= */
+.whatsapp-float{
+position:fixed;bottom:20px;right:20px;width:56px;height:56px;background:#25D366;color:#fff;
+border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;
+box-shadow:0 14px 30px rgba(0,0,0,.35);z-index:999;transition:.3s
+}
+.whatsapp-float:hover{transform:translateY(-3px)}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:576px){
+.carousel-item img{height:45vh}
+.hero{padding-top:24px}
+}
